@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password-Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./javascript.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="checkBox">
+            <input id="passLength" type="number" value="5" min="1" max="25">
+            <label for="number"></label>
+            <input type="checkbox" name="numbers" value="numbers" id="numbers" checked>
+            <label for="numbers">Numbers</label>
+
+            <input type="checkbox" name="letters" value="letters" id="letters">
+            <label for="letters">Letters</label>
+
+            <input type="checkbox" name="upperCase" value="upperCase" id="upperCase">
+            <label for="upperCase">Uppercase</label>
+            <input type="checkbox" name="symbols" value="symbols" id="symbols">
+            <label for="symbols">Symbols</label>
+            <button type="submit" onclick="passwordGenerate()">Generate</button>
+        </div>
+        <div id="showPassword"></div>
+
+    </div>
+</body>
+
+</html>
